@@ -9,17 +9,17 @@ const email = "picospitfire@icloud.com";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>ai-alm-oss — Governed AI-First ALM | Issue to Traceable PR</title>
-		<meta name="description" content="Research prototype of a governed AI-First ALM orchestrator. Deterministic Jira state machine (STAGE/ROLE/AGENT) → autonomous issue-to-PR pipeline with human-in-the-loop. Private prototype, available on request." />
+		<title>ai-alm-oss — AI that helps teams ship, with human control</title>
+		<meta name="description" content="ai-alm-oss is a research prototype that automates the repetitive parts of software delivery — from idea to traceable, auditable pull request — while a human approves every important step. Private prototype, demo on request." />
 		<meta name="author" content="Krzysztof Paliga" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={siteUrl} />
-		<meta property="og:title" content="ai-alm-oss — Governed AI-First ALM" />
-		<meta property="og:description" content="From GitHub Issue to Traceable PR. Deterministic Jira state machine, exclusive mutator, zero BLOCKED states. Research prototype — private repo, demo on request." />
+		<meta property="og:title" content="ai-alm-oss — AI that helps teams ship, with human control" />
+		<meta property="og:description" content="From idea to traceable pull request — AI prepares, human approves, everything is logged. Research prototype, private demo on request." />
 		<meta property="og:image" content={`${siteUrl}/og-image.png`} />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="ai-alm-oss — Governed AI-First ALM" />
-		<meta name="twitter:description" content="Governed autonomy for ALM: Jira STAGE/ROLE/AGENT → deterministic pipeline → auditable PR." />
+		<meta name="twitter:title" content="ai-alm-oss — AI that helps teams ship, with human control" />
+		<meta name="twitter:description" content="Automates the busywork in software delivery, keeps a human in charge of every decision." />
 		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
 		<style>
 			@import "tailwindcss";
@@ -35,14 +35,13 @@ const email = "picospitfire@icloud.com";
 					<span class="hidden sm:inline-flex items-center gap-1.5 ml-2 px-2 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-[11px] font-medium text-amber-800">● Private Prototype</span>
 				</div>
 				<nav class="hidden md:flex items-center gap-6 text-sm text-zinc-600">
-					<a href="#pipeline" class="hover:text-zinc-900 transition">Pipeline</a>
-					<a href="#governance" class="hover:text-zinc-900 transition">Governance</a>
+					<a href="#in-30-seconds" class="hover:text-zinc-900 transition">In 30 seconds</a>
 					<a href="#demo" class="hover:text-zinc-900 transition">Demo</a>
-					<a href="#stack" class="hover:text-zinc-900 transition">Stack</a>
+					<a href="#how-it-works" class="hover:text-zinc-900 transition">How it works</a>
 				</nav>
 				<div class="flex items-center gap-2">
 					<a href={linkedIn} target="_blank" rel="noopener" class="hidden sm:inline-flex text-sm px-3.5 py-1.5 rounded-full border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition">LinkedIn</a>
-					<a href={`mailto:${email}?subject=ai-alm-oss%20—%20private%20demo%20request`} class="text-sm px-4 py-1.5 rounded-full bg-zinc-900 text-white hover:bg-zinc-800 transition font-medium">Request Demo</a>
+					<a href={`mailto:${email}?subject=Contact%20—%20ai-alm-oss`} class="text-sm px-4 py-1.5 rounded-full bg-zinc-900 text-white hover:bg-zinc-800 transition font-medium">Contact me</a>
 				</div>
 			</div>
 		</header>
@@ -52,23 +51,19 @@ const email = "picospitfire@icloud.com";
 			<div class="max-w-3xl">
 				<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-zinc-200 text-xs text-zinc-600 mb-5">
 					<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-					Research Prototype • OSS Tooling • Jira Cloud + GitHub
-					<span class="hidden sm:inline text-zinc-400">— built for AI-First ALM</span>
+					Research Prototype • Jira + GitHub • Built for AI-First ALM
 				</div>
 				<h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-					Governed AI-First ALM.<br />
-					<span class="text-zinc-500">From GitHub Issue to traceable PR</span>
-					<span class="text-zinc-900"> — with human in the loop.</span>
+					I build AI that helps teams ship<br />
+					<span class="text-zinc-500">— with human control.</span>
 				</h1>
 				<p class="mt-5 text-[17px] leading-7 text-zinc-600 max-w-2xl">
-					<span class="font-medium text-zinc-900">ai-alm-oss</span> is a deterministic orchestrator for autonomous ALM.
-					Jira is the source of truth — a 3-dimensional state machine
-					<code class="px-1.5 py-0.5 rounded bg-zinc-900 text-white text-xs font-mono">STAGE / ROLE / AGENT</code>
-					governs every transition from discovery to verified pull request. No <code class="px-1 py-0.5 rounded bg-zinc-200 text-xs font-mono">BLOCKED</code> states. No guesswork.
+					<span class="font-medium text-zinc-900">ai-alm-oss</span> automates the repetitive parts of software delivery — from idea to tested code — while a human stays in charge of every important decision. Every step is traceable and reversible.
 				</p>
+				<p class="mt-3 text-sm leading-6 text-zinc-500 max-w-2xl">Particularly useful where auditability matters — like in regulated B2B environments such as Transportation Management.</p>
 				<div class="mt-7 flex flex-wrap gap-3">
-					<a href={`mailto:${email}?subject=ai-alm-oss%20—%20private%20demo%20request&body=Hi%20Krzysztof%2C%0A%0AI%20saw%20ai-alm-oss%20and%20would%20like%20a%20private%20walkthrough.%0A`} class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition">
-						Request Private Demo
+					<a href={`mailto:${email}?subject=Contact%20—%20ai-alm-oss&body=Hi%20Krzysztof%2C%0A%0AI%20saw%20ai-alm-oss%20and%20would%20like%20to%20learn%20more.%0A%0ABest%2C%0A`} class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition">
+						Contact me
 						<svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
 					<a href={linkedIn} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-zinc-200 text-sm font-medium hover:bg-zinc-50 transition">
@@ -77,216 +72,55 @@ const email = "picospitfire@icloud.com";
 					</a>
 					<a href="#demo" class="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium text-zinc-600 hover:text-zinc-900 transition">See demo ↓</a>
 				</div>
-				<p class="mt-4 text-xs text-zinc-500">Private research prototype — code available on request for hiring managers (NDA-friendly). No tracking. No cookies.</p>
+				<p class="mt-4 text-xs text-zinc-500">Private research prototype — code and live walkthrough available on request (NDA-friendly). No tracking. No cookies.</p>
 			</div>
 
-			<!-- Pipeline preview card -->
+			<!-- Simple flow preview -->
 			<div class="mt-10 rounded-2xl border border-zinc-200 bg-white overflow-hidden shadow-sm">
 				<div class="flex items-center gap-1.5 px-4 py-3 border-b border-zinc-100 bg-zinc-50/50">
 					<span class="w-3 h-3 rounded-full bg-red-400"></span><span class="w-3 h-3 rounded-full bg-yellow-400"></span><span class="w-3 h-3 rounded-full bg-green-400"></span>
-					<span class="ml-3 text-xs font-mono text-zinc-500">ai-alm-oss — canonical loop</span>
-					<span class="ml-auto hidden sm:inline text-xs text-zinc-400">AGENTS.md — single source of truth</span>
+					<span class="ml-3 text-xs font-medium text-zinc-600">How a task moves</span>
+					<span class="ml-auto hidden sm:inline text-xs text-zinc-400">One approved step at a time</span>
 				</div>
 				<div class="p-6 md:p-8">
-					<div class="flex flex-wrap items-center gap-2 text-xs font-mono">
-						<span class="px-2.5 py-1 rounded-full bg-zinc-900 text-white">onboard</span>
+					<div class="flex flex-wrap items-center gap-2 text-sm">
+						<span class="px-3 py-1.5 rounded-full bg-zinc-900 text-white font-medium">Idea</span>
 						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-white border border-zinc-200">discover</span>
+						<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">AI prepares</span>
 						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-white border border-zinc-200">po</span>
+						<span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800">Human approves</span>
 						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-white border border-zinc-200">qa</span>
+						<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Tested code</span>
 						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-white border border-zinc-200">arch</span>
-						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-white border border-zinc-200">sec</span>
-						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700">impl</span>
-						<span class="text-zinc-300">→</span>
-						<span class="px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700">ship</span>
+						<span class="px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700">Traceable PR</span>
 					</div>
-					<div class="mt-4 grid md:grid-cols-3 gap-3 text-xs">
-						<div class="rounded-xl bg-zinc-50 border border-zinc-200 p-3">
-							<div class="font-semibold text-zinc-900 font-mono">impl</div>
-							<div class="text-zinc-600 mt-1 font-mono">dev-analyst → dev-update-approved → dev-impl → qa-impl</div>
-							<div class="text-zinc-400 mt-1">Sequential. No parallel dev∥qa. No cross-read.</div>
-						</div>
-						<div class="rounded-xl bg-zinc-50 border border-zinc-200 p-3">
-							<div class="font-semibold text-zinc-900 font-mono">ship</div>
-							<div class="text-zinc-600 mt-1 font-mono">verify → pr → feedback</div>
-							<div class="text-zinc-400 mt-1">verify = READY_FOR_PR gate. pr = explicit human approval.</div>
-						</div>
-						<div class="rounded-xl bg-amber-50 border border-amber-200 p-3">
-							<div class="font-semibold text-amber-900 font-mono">entry → exit</div>
-							<div class="text-amber-800 mt-1 font-mono">public repo (owner/repo) → traceable PR</div>
-							<div class="text-amber-700/70 mt-1">Full lineage: Jira + GitHub, never AAO.</div>
-						</div>
-					</div>
+					<p class="mt-4 text-xs text-zinc-500">No step happens without a human OK. Every move is logged so you can audit it later — important in regulated B2B.</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- Problem / Solution -->
-		<section class="bg-white border-y border-zinc-200">
+		<!-- In 30 seconds -->
+		<section id="in-30-seconds" class="bg-white border-y border-zinc-200">
 			<div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
 				<div class="max-w-2xl">
-					<h2 class="text-2xl font-semibold tracking-tight">Why governed autonomy beats raw automation</h2>
-					<p class="mt-2 text-zinc-600">Particularly in regulated, B2B contexts like Transportation Management — auditability matters more than speed.</p>
+					<h2 class="text-2xl font-semibold tracking-tight">In 30 seconds</h2>
+					<p class="mt-2 text-zinc-600">The problem I’m solving — and why it matters for B2B delivery.</p>
 				</div>
 				<div class="mt-8 grid md:grid-cols-3 gap-5">
 					<div class="rounded-2xl border border-zinc-200 p-6">
 						<div class="w-8 h-8 rounded-lg bg-zinc-100 flex items-center justify-center text-sm">⧗</div>
-						<h3 class="mt-4 font-semibold">Manual ALM is slow</h3>
-						<p class="mt-2 text-sm leading-6 text-zinc-600">Handovers between PO → DEV → QA → SEC → ARCH lose context. Status in Jira drifts from reality. Traceability is an afterthought.</p>
+						<h3 class="mt-4 font-semibold">Delivery is slow</h3>
+						<p class="mt-2 text-sm leading-6 text-zinc-600">Handovers between roles lose context. Status in Jira drifts from reality. Proving what changed — and why — takes extra work.</p>
 					</div>
 					<div class="rounded-2xl border border-zinc-200 p-6">
 						<div class="w-8 h-8 rounded-lg bg-red-50 border border-red-200 flex items-center justify-center text-sm">⚠</div>
-						<h3 class="mt-4 font-semibold">AI without governance = chaos</h3>
-						<p class="mt-2 text-sm leading-6 text-zinc-600">Unbounded agents overwrite each other, invent statuses like <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">BLOCKED</code>, and produce unreviewable PRs.</p>
+						<h3 class="mt-4 font-semibold">AI without guardrails is risky</h3>
+						<p class="mt-2 text-sm leading-6 text-zinc-600">If AI does too much at once, no one can review it. Changes become hard to explain — a problem in regulated environments.</p>
 					</div>
 					<div class="rounded-2xl border border-zinc-900 bg-zinc-900 text-white p-6">
 						<div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-sm">◆</div>
-						<h3 class="mt-4 font-semibold">ai-alm-oss = governed autonomy</h3>
-						<p class="mt-2 text-sm leading-6 text-zinc-300">Every action is a legal <code class="px-1 py-0.5 rounded bg-white/10 text-xs font-mono">STAGE</code> transition. One exclusive mutator at a time. Human approvals are explicit (<code class="px-1 py-0.5 rounded bg-white/10 text-xs font-mono">✅ / APPROVE:&lt;id&gt;</code>).</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Pipeline detail -->
-		<section id="pipeline" class="max-w-6xl mx-auto px-6 py-12 md:py-16">
-			<div class="flex flex-wrap items-baseline justify-between gap-4">
-				<h2 class="text-2xl font-semibold tracking-tight">Canonical loop — one ticket, one column move at a time</h2>
-				<span class="text-xs font-mono px-2.5 py-1 rounded-full bg-white border border-zinc-200 text-zinc-600">Variant I — exclusive mutator</span>
-			</div>
-			<p class="mt-2 text-sm text-zinc-600 max-w-3xl">Orchestrator knows the full state machine but never duplicates skill work. One step = one legal <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">STAGE</code> transition. The chosen skill then mutates content. If a move is illegal — orchestrator leaves a comment, not a silent failure.</p>
-
-			<div class="mt-8 rounded-2xl border border-zinc-200 bg-white overflow-hidden">
-				<div class="overflow-x-auto">
-					<table class="w-full text-sm">
-						<thead class="bg-zinc-50 border-b border-zinc-200 text-xs font-mono text-zinc-500">
-							<tr><th class="text-left px-4 py-3 font-medium">Stage</th><th class="text-left px-4 py-3 font-medium">Trigger</th><th class="text-left px-4 py-3 font-medium">Next AGENT (convention)</th><th class="text-left px-4 py-3 font-medium">Human gate</th></tr>
-						</thead>
-						<tbody class="divide-y divide-zinc-100 font-mono text-xs">
-							<tr><td class="px-4 py-2.5">discover candidate approved</td><td class="px-4 py-2.5">✅</td><td class="px-4 py-2.5">aialm-oss-po-analyze</td><td class="px-4 py-2.5 text-zinc-500">PO</td></tr>
-							<tr><td class="px-4 py-2.5">AC approved</td><td class="px-4 py-2.5">APPROVE</td><td class="px-4 py-2.5">aialm-oss-po-prep-decompose</td><td class="px-4 py-2.5 text-zinc-500">PO</td></tr>
-							<tr><td class="px-4 py-2.5">decompose done</td><td class="px-4 py-2.5">—</td><td class="px-4 py-2.5">aialm-oss-qa-analyze</td><td class="px-4 py-2.5 text-zinc-500">—</td></tr>
-							<tr><td class="px-4 py-2.5">GENERATED QA approved</td><td class="px-4 py-2.5">✅</td><td class="px-4 py-2.5">aialm-oss-arch-analyze</td><td class="px-4 py-2.5 text-zinc-500">QA</td></tr>
-							<tr><td class="px-4 py-2.5">ARCH approved</td><td class="px-4 py-2.5">✅</td><td class="px-4 py-2.5">aialm-oss-sec-analyze</td><td class="px-4 py-2.5 text-zinc-500">ARCH</td></tr>
-							<tr><td class="px-4 py-2.5">SEC approved</td><td class="px-4 py-2.5">✅</td><td class="px-4 py-2.5">aialm-oss-dev-analyst</td><td class="px-4 py-2.5 text-zinc-500">SEC</td></tr>
-							<tr><td class="px-4 py-2.5">contract approved</td><td class="px-4 py-2.5">✅</td><td class="px-4 py-2.5">aialm-oss-dev-impl</td><td class="px-4 py-2.5 text-zinc-500">DEV</td></tr>
-							<tr><td class="px-4 py-2.5">dev-impl done</td><td class="px-4 py-2.5">—</td><td class="px-4 py-2.5">aialm-oss-qa-impl</td><td class="px-4 py-2.5 text-zinc-500">—</td></tr>
-							<tr><td class="px-4 py-2.5">qa-impl done</td><td class="px-4 py-2.5">—</td><td class="px-4 py-2.5">aialm-oss-verify</td><td class="px-4 py-2.5 text-zinc-500">—</td></tr>
-							<tr><td class="px-4 py-2.5">verify ready</td><td class="px-4 py-2.5">human gate</td><td class="px-4 py-2.5">aialm-oss-pr</td><td class="px-4 py-2.5 text-zinc-500">PO/lead</td></tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="px-4 py-3 bg-amber-50 border-t border-amber-100 text-xs text-amber-800">Pickup convention: human hands off by setting <code class="px-1 py-0.5 rounded bg-amber-100 font-mono">ROLE=AI</code> (transient) at <code class="font-mono">READY / AWAITING_HUMAN_APPROVAL</code> + <code class="font-mono">AGENT=none</code>. Orchestrator then sets <code class="font-mono">AWAITING_AGENT_PICKUP</code> + concrete <code class="font-mono">AGENT</code>. Idempotent — re-run → <code class="font-mono">SKIPPED</code>.</div>
-			</div>
-		</section>
-
-		<!-- Governance -->
-		<section id="governance" class="bg-white border-y border-zinc-200">
-			<div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
-				<h2 class="text-2xl font-semibold tracking-tight">Governance is the product</h2>
-				<p class="mt-2 text-sm text-zinc-600 max-w-3xl">Status is a tuple of three independent dimensions. Custom fields <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">AIALM STAGE / ROLE / AGENT</code> (select) are the source of truth. Native Jira column is atomically synced via <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">STAGE_NATIVE_STATUS</code>.</p>
-
-				<div class="mt-8 grid lg:grid-cols-2 gap-6">
-					<div class="rounded-2xl border border-zinc-200 overflow-hidden">
-						<div class="px-5 py-3 bg-zinc-900 text-white text-sm font-medium">State tuple — 3 dimensions</div>
-						<div class="p-5 space-y-4 text-sm">
-							<div>
-								<div class="text-xs font-mono font-semibold text-zinc-500 tracking-widest">STAGE</div>
-								<div class="mt-1 flex flex-wrap gap-1.5 font-mono text-xs">
-									<span class="px-2 py-1 rounded bg-zinc-100 border border-zinc-200">IDLE</span>
-									<span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">AWAITING_HUMAN_APPROVAL</span>
-									<span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">AWAITING_AGENT_PICKUP</span>
-									<span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">IN_PROGRESS_BY_AGENT</span>
-									<span class="px-2 py-1 rounded bg-emerald-50 border border-emerald-200">READY</span>
-									<span class="px-2 py-1 rounded bg-zinc-900 text-white">DONE</span>
-								</div>
-							</div>
-							<div>
-								<div class="text-xs font-mono font-semibold text-zinc-500 tracking-widest">ROLE (scalar — one owner at a time)</div>
-								<div class="mt-1 flex flex-wrap gap-1.5 font-mono text-xs">
-									<span class="px-2 py-1 rounded bg-white border border-zinc-200">PO</span>
-									<span class="px-2 py-1 rounded bg-white border border-zinc-200">DEV</span>
-									<span class="px-2 py-1 rounded bg-white border border-zinc-200">QA</span>
-									<span class="px-2 py-1 rounded bg-white border border-zinc-200">SEC</span>
-									<span class="px-2 py-1 rounded bg-white border border-zinc-200">ARCH</span>
-									<span class="px-2 py-1 rounded bg-violet-50 border border-violet-200">AI (transient)</span>
-								</div>
-								<p class="mt-1 text-xs text-zinc-500">Sequence PO→DEV→QA→SEC→ARCH. Parallel work = separate child tickets.</p>
-							</div>
-							<div>
-								<div class="text-xs font-mono font-semibold text-zinc-500 tracking-widest">AGENT</div>
-								<div class="mt-1 font-mono text-xs text-zinc-700"><span class="px-2 py-1 rounded bg-white border border-zinc-200">none</span> <span class="text-zinc-400">+ 18 skills</span> <code class="ml-1 px-1.5 py-0.5 rounded bg-zinc-100">aialm-oss-*</code></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="space-y-4">
-						<div class="rounded-2xl border border-zinc-200 bg-amber-50 p-5">
-							<h3 class="text-sm font-semibold text-amber-900">Invariants (deterministic)</h3>
-							<ul class="mt-2 space-y-1.5 text-xs font-mono text-amber-900/80 leading-5">
-								<li>• <code class="px-1 py-0.5 rounded bg-amber-100">AGENT=none ⇔ STAGE ∈ &#123;IDLE, AWAITING_HUMAN_APPROVAL, DONE, READY&#125;</code></li>
-								<li>• <code class="px-1 py-0.5 rounded bg-amber-100">AGENT≠none ⇔ STAGE ∈ &#123;AWAITING_AGENT_PICKUP, IN_PROGRESS_BY_AGENT&#125;</code></li>
-								<li>• <code class="px-1 py-0.5 rounded bg-amber-100">ROLE=AI</code> only at <code class="px-1 py-0.5 rounded bg-amber-100">AGENT=none</code> (transient handoff)</li>
-								<li>• <code class="px-1 py-0.5 rounded bg-amber-100">DONE → AGENT=none, ROLE=null</code> (no active owner)</li>
-								<li>• No <code class="px-1 py-0.5 rounded bg-amber-100">BLOCKED</code> — missing requisite = stay in <code class="px-1 py-0.5 rounded bg-amber-100">IDLE/AWAITING_AGENT_PICKUP</code> + comment</li>
-							</ul>
-						</div>
-						<div class="rounded-2xl border border-zinc-200 p-5 bg-white">
-							<h3 class="text-sm font-semibold">Legal transitions only</h3>
-							<div class="mt-2 grid grid-cols-1 gap-1.5 text-xs font-mono text-zinc-600">
-								<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-zinc-100">IDLE</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">AWAITING_AGENT_PICKUP</span> <span class="text-zinc-400 ml-auto">agent start</span></div>
-								<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">AWAITING_AGENT_PICKUP</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">IN_PROGRESS_BY_AGENT</span> <span class="text-zinc-400 ml-auto">same AGENT</span></div>
-								<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">IN_PROGRESS_BY_AGENT</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">AWAITING_HUMAN_APPROVAL</span> <span class="text-zinc-400 ml-auto">agent done</span></div>
-								<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">AWAITING_HUMAN_APPROVAL</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">AWAITING_AGENT_PICKUP</span> <span class="text-zinc-400 ml-auto">human ✅</span></div>
-								<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-emerald-50 border border-emerald-200">READY</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">AWAITING_AGENT_PICKUP</span> <span class="text-zinc-400 ml-auto">next skill</span></div>
-							</div>
-							<p class="mt-3 text-xs text-zinc-500">Enforced in <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">shared/state.ts → transition()</code> — skills cannot invent states.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Code snippets (anonymized, allowed) -->
-				<div class="mt-6 grid lg:grid-cols-2 gap-6">
-					<div class="rounded-2xl border border-zinc-200 bg-zinc-900 overflow-hidden">
-						<div class="px-4 py-2.5 flex items-center justify-between border-b border-white/10">
-							<span class="text-xs font-mono text-zinc-400">shared/state.ts — invariants</span>
-							<span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-zinc-300">PURE • zero I/O</span>
-						</div>
-						<pre class="p-4 text-xs font-mono leading-5 overflow-x-auto text-zinc-100"><code>{`export function assertConsistent(s: TicketState): string[] {
-  const e: string[] = [];
-  if (s.agent === 'none') {
-    if (!NO_AGENT_STAGES.includes(s.stage))
-      e.push(\`AGENT=none but STAGE=\${s.stage} requires agent\`);
-  } else {
-    if (!ACTIVE_AGENT_STAGES.includes(s.stage))
-      e.push(\`AGENT=\${s.agent} but STAGE=\${s.stage} must be active\`);
-  }
-  if (s.role === 'AI' && s.agent !== 'none')
-    e.push('ROLE=AI requires AGENT=none (transient)');
-  return e;
-}`}</code></pre>
-					</div>
-					<div class="rounded-2xl border border-zinc-200 bg-zinc-900 overflow-hidden">
-						<div class="px-4 py-2.5 flex items-center justify-between border-b border-white/10">
-							<span class="text-xs font-mono text-zinc-400">orchestrate/index.ts — one step</span>
-							<span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-zinc-300">ATOMIC • idempotent</span>
-						</div>
-						<pre class="p-4 text-xs font-mono leading-5 overflow-x-auto text-zinc-100"><code>{`// one legal column move or comment
-if (!isApproved(ticket)) {
-  await comment(ticket, 'BLOCKED: missing ✅ / APPROVE:<id>');
-  return { result: 'BLOCKED' };
-}
-await applyState(ticket, {
-  stage: 'AWAITING_AGENT_PICKUP',
-  role: null, // AI transient → null
-  agent: nextAgentFor(ticket) // convention table
-}); // + native column sync
-return { result: 'APPLIED' };`}</code></pre>
+						<h3 class="mt-4 font-semibold">One step, one approval</h3>
+						<p class="mt-2 text-sm leading-6 text-zinc-300">AI prepares the next step, a human approves, the move is logged. Only one helper works on a task at a time. Nothing gets stuck in an unclear state.</p>
 					</div>
 				</div>
 			</div>
@@ -295,86 +129,168 @@ return { result: 'APPLIED' };`}</code></pre>
 		<!-- Demo -->
 		<section id="demo" class="max-w-6xl mx-auto px-6 py-12 md:py-16">
 			<div class="max-w-3xl">
-				<h2 class="text-2xl font-semibold tracking-tight">See it move — one column at a time</h2>
-				<p class="mt-2 text-sm text-zinc-600">Anonymized Jira board (<code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">ai-alm-oss.atlassian.net</code>). Human sets <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">ROLE=AI</code> → orchestrator advances one legal transition → agent mutates. Idempotent replay → <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">SKIPPED</code>.</p>
+				<h2 class="text-2xl font-semibold tracking-tight">See it in action</h2>
+				<p class="mt-2 text-sm text-zinc-600">Anonymized Jira board. The task only moves to the next column after a human says yes. Every move appears as a comment — so the whole story is auditable later. Watch the comments panel in the animation.</p>
 			</div>
 
 			<div class="mt-8 rounded-2xl border border-zinc-200 bg-white overflow-hidden shadow-sm">
-				<div class="aspect-[16/9] bg-zinc-50 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
-					<img src={`${import.meta.env.BASE_URL}/demo.gif`} alt="Jira board animation: ticket moves from READY to AWAITING_AGENT_PICKUP to AGENT WORKING" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'; document.getElementById('demo-fallback').style.display='flex'" />
-					<div id="demo-fallback" class="flex flex-col items-center justify-center gap-4" style="display: none;">
-						<div class="flex items-center gap-2 text-xs font-mono">
+				<div class="aspect-[16/9] bg-zinc-50 flex flex-col items-center justify-center text-center relative overflow-hidden">
+					<img src={`${import.meta.env.BASE_URL}/demo.gif`} alt="Jira board animation with comments appearing as the ticket moves" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'; document.getElementById('demo-fallback').style.display='flex'" />
+					<div id="demo-fallback" class="flex flex-col items-center justify-center gap-4 p-6" style="display: none;">
+						<div class="flex items-center gap-2 text-xs">
 							<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200 shadow-sm">Backlog</span>
 							<span class="text-zinc-300">→</span>
-							<span class="px-3 py-1.5 rounded-full bg-sky-50 border border-sky-200 shadow-sm animate-pulse">AWAITS AGENT PICKUP</span>
+							<span class="px-3 py-1.5 rounded-full bg-sky-50 border border-sky-200 shadow-sm animate-pulse">In progress</span>
 							<span class="text-zinc-300">→</span>
-							<span class="px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 shadow-sm">AGENT WORKING</span>
+							<span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 shadow-sm">Needs approval</span>
 							<span class="text-zinc-300">→</span>
-							<span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 shadow-sm">AWAITS HUMAN APPROVAL</span>
+							<span class="px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 shadow-sm">Done</span>
 						</div>
-						<p class="text-xs text-zinc-500 max-w-md">Demo GIF is being generated from an anonymized board. Fallback preview above — final GIF will show the atomic column move + state tuple change.</p>
-						<div class="flex items-center gap-2 text-xs font-mono text-zinc-400">
-							<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Recording via Playwright → ffmpeg (10fps, 1280px, &lt;3MB)
-						</div>
+						<p class="text-xs text-zinc-500 max-w-md">Demo shows a task moving across the board with comments appearing for each step. Final GIF: board + comments panel.</p>
 					</div>
 				</div>
 				<div class="px-5 py-4 bg-zinc-50 border-t border-zinc-100 flex flex-wrap items-center justify-between gap-3 text-xs">
-					<span class="font-mono text-zinc-600"><span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 1. Human handoff <code class="px-1 py-0.5 rounded bg-white border border-zinc-200">ROLE=AI</code></span> <span class="text-zinc-300 mx-2">→</span> 2. Orchestrator <code class="px-1 py-0.5 rounded bg-white border border-zinc-200">APPLIED</code> <span class="text-zinc-300 mx-2">→</span> 3. Agent mutates <code class="px-1 py-0.5 rounded bg-white border border-zinc-200">IN_PROGRESS</code></span>
-					<span class="text-zinc-500">Board: anonymized • No customer data • Private instance</span>
-				</div>
-			</div>
-
-			<div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
-				<div class="rounded-xl border border-zinc-200 bg-white p-4">
-					<div class="text-xs font-mono font-semibold text-zinc-500">DEBUG flag</div>
-					<p class="mt-1 text-xs leading-5 text-zinc-600">Per-ticket <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">aialm:debug:on/off</code> — when on, every orchestrator result is logged as <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">[AI-generated] Orchestrate — DEBUG</code> comment.</p>
-				</div>
-				<div class="rounded-xl border border-zinc-200 bg-white p-4">
-					<div class="text-xs font-mono font-semibold text-zinc-500">Human gates</div>
-					<p class="mt-1 text-xs leading-5 text-zinc-600">No silent auto-advance. Each <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">AWAITING_HUMAN_APPROVAL</code> waits for explicit <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">✅</code> or <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">APPROVE:&lt;id&gt;</code> from the owning <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">ROLE</code>.</p>
-				</div>
-				<div class="rounded-xl border border-zinc-200 bg-white p-4">
-					<div class="text-xs font-mono font-semibold text-zinc-500">Report</div>
-					<p class="mt-1 text-xs leading-5 text-zinc-600"><code class="px-1 py-0.5 rounded bg-emerald-50 border border-emerald-200 font-mono">APPLIED</code> moved, <code class="px-1 py-0.5 rounded bg-amber-50 border border-amber-200 font-mono">BLOCKED</code> commented, <code class="px-1 py-0.5 rounded bg-zinc-100 font-mono">SKIPPED</code> idempotent.</p>
+					<span class="text-zinc-600">Each column move leaves a comment — the history stays visible for audit.</span>
+					<span class="text-zinc-400">Board: anonymized • No customer data</span>
 				</div>
 			</div>
 		</section>
 
-		<!-- Stack -->
-		<section id="stack" class="bg-white border-y border-zinc-200">
+		<!-- How it works (collapsed for HR, open for tech) -->
+		<section id="how-it-works" class="bg-white border-y border-zinc-200">
 			<div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
-				<h2 class="text-2xl font-semibold tracking-tight">Stack — boring, deterministic, auditable</h2>
-				<div class="mt-6 flex flex-wrap gap-2 text-xs font-mono">
-					<span class="px-3 py-1.5 rounded-full bg-zinc-900 text-white">TypeScript 5</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Node ≥22</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Jira Cloud REST v3</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">MCP Atlassian</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Docker</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Vitest</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Playwright</span>
-					<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Astro + Tailwind</span>
-				</div>
-				<div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
-					<div class="rounded-2xl border border-zinc-200 p-5">
-						<h3 class="font-semibold">What’s implemented</h3>
-						<ul class="mt-2 space-y-1.5 text-sm text-zinc-600 list-disc list-inside">
-							<li>Onboarding: per-client Jira project + self-aware fields + governance</li>
-							<li>Discover: GitHub issues → qualified candidates with labels</li>
-							<li>Orchestrator: atomic <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">STAGE ↔ native column</code> sync + convention pickup</li>
-							<li>Dispatcher: hunts <code class="px-1 py-0.5 rounded bg-zinc-100 text-xs font-mono">AWAITS AGENT PICKUP</code> and dispatches skills in Docker</li>
-						</ul>
+				<details class="group rounded-2xl border border-zinc-200 bg-zinc-50 open:bg-white transition">
+					<summary class="list-none flex items-center justify-between gap-4 px-6 py-5 cursor-pointer">
+						<div>
+							<h2 class="text-lg font-semibold tracking-tight">How it works — for technical reviewers</h2>
+							<p class="mt-1 text-sm text-zinc-600">State machine, step-by-step handover, and stack. Closed by default to keep the page light for HR.</p>
+						</div>
+						<span class="shrink-0 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 text-white text-xs font-medium group-open:hidden">Show details</span>
+						<span class="shrink-0 hidden group-open:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-zinc-200 text-xs font-medium">Hide details</span>
+					</summary>
+					<div class="px-6 pb-8 pt-2">
+						<!-- Pipeline detail -->
+						<div class="mt-4">
+							<h3 class="text-sm font-semibold">One ticket, one column move at a time</h3>
+							<p class="mt-1 text-sm text-zinc-600 max-w-3xl">The orchestrator knows the full state machine but never duplicates a specialist’s work. One step = one allowed move. The chosen helper then does the work. If a move isn’t allowed, the system leaves a comment explaining why — instead of failing silently.</p>
+							<div class="mt-5 rounded-xl border border-zinc-200 bg-white overflow-hidden">
+								<div class="overflow-x-auto">
+									<table class="w-full text-sm">
+										<thead class="bg-zinc-50 border-b border-zinc-200 text-xs text-zinc-500">
+											<tr><th class="text-left px-4 py-2.5 font-medium">Stage</th><th class="text-left px-4 py-2.5 font-medium">What happens</th><th class="text-left px-4 py-2.5 font-medium">Who’s next</th><th class="text-left px-4 py-2.5 font-medium">Needs human OK</th></tr>
+										</thead>
+										<tbody class="divide-y divide-zinc-100 text-xs">
+											<tr><td class="px-4 py-2.5">Candidate approved</td><td class="px-4 py-2.5 text-zinc-500">AI analyzes the issue</td><td class="px-4 py-2.5">po-analyze</td><td class="px-4 py-2.5">PO</td></tr>
+											<tr><td class="px-4 py-2.5">Requirements approved</td><td class="px-4 py-2.5 text-zinc-500">Decompose into smaller tasks</td><td class="px-4 py-2.5">po-decompose</td><td class="px-4 py-2.5">PO</td></tr>
+											<tr><td class="px-4 py-2.5">Split done</td><td class="px-4 py-2.5 text-zinc-500">QA scenarios</td><td class="px-4 py-2.5">qa-analyze</td><td class="px-4 py-2.5">—</td></tr>
+											<tr><td class="px-4 py-2.5">QA approved</td><td class="px-4 py-2.5 text-zinc-500">Architecture review</td><td class="px-4 py-2.5">arch-analyze</td><td class="px-4 py-2.5">QA</td></tr>
+											<tr><td class="px-4 py-2.5">Architecture approved</td><td class="px-4 py-2.5 text-zinc-500">Security review</td><td class="px-4 py-2.5">sec-analyze</td><td class="px-4 py-2.5">ARCH</td></tr>
+											<tr><td class="px-4 py-2.5">Security approved</td><td class="px-4 py-2.5 text-zinc-500">Technical contract</td><td class="px-4 py-2.5">dev-analyst</td><td class="px-4 py-2.5">SEC</td></tr>
+											<tr><td class="px-4 py-2.5">Contract approved</td><td class="px-4 py-2.5 text-zinc-500">Build the feature</td><td class="px-4 py-2.5">dev-impl</td><td class="px-4 py-2.5">DEV</td></tr>
+											<tr><td class="px-4 py-2.5">Feature ready</td><td class="px-4 py-2.5 text-zinc-500">Write tests</td><td class="px-4 py-2.5">qa-impl</td><td class="px-4 py-2.5">—</td></tr>
+											<tr><td class="px-4 py-2.5">Tests ready</td><td class="px-4 py-2.5 text-zinc-500">Verify</td><td class="px-4 py-2.5">verify</td><td class="px-4 py-2.5">—</td></tr>
+											<tr><td class="px-4 py-2.5">Verified</td><td class="px-4 py-2.5 text-zinc-500">Open pull request</td><td class="px-4 py-2.5">pr</td><td class="px-4 py-2.5">Lead</td></tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="px-4 py-2.5 bg-amber-50 border-t border-amber-100 text-xs text-amber-800">Handover: a human hands off by marking the ticket for AI. The orchestrator then moves it to “waiting for helper” and picks the right specialist. Re-running is safe — it simply does nothing the second time.</div>
+							</div>
+						</div>
+
+						<!-- Governance -->
+						<div class="mt-8 grid lg:grid-cols-2 gap-6">
+							<div class="rounded-xl border border-zinc-200 overflow-hidden bg-white">
+								<div class="px-4 py-3 bg-zinc-900 text-white text-sm font-medium">Status is three things at once</div>
+								<div class="p-4 space-y-4 text-sm">
+									<div>
+										<div class="text-xs font-semibold text-zinc-500 tracking-widest">WHERE IS IT</div>
+										<div class="mt-1.5 flex flex-wrap gap-1.5 text-xs">
+											<span class="px-2 py-1 rounded bg-zinc-100 border border-zinc-200">Backlog</span>
+											<span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">Needs human OK</span>
+											<span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">Waiting for helper</span>
+											<span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">Helper working</span>
+											<span class="px-2 py-1 rounded bg-emerald-50 border border-emerald-200">Ready</span>
+											<span class="px-2 py-1 rounded bg-zinc-900 text-white">Done</span>
+										</div>
+										<p class="mt-1 text-xs text-zinc-500">Maps to Jira column + custom field. One move = one column.</p>
+									</div>
+									<div>
+										<div class="text-xs font-semibold text-zinc-500 tracking-widest">WHO OWNS IT</div>
+										<div class="mt-1.5 flex flex-wrap gap-1.5 text-xs">
+											<span class="px-2 py-1 rounded bg-white border border-zinc-200">PO</span>
+											<span class="px-2 py-1 rounded bg-white border border-zinc-200">DEV</span>
+											<span class="px-2 py-1 rounded bg-white border border-zinc-200">QA</span>
+											<span class="px-2 py-1 rounded bg-white border border-zinc-200">SEC</span>
+											<span class="px-2 py-1 rounded bg-white border border-zinc-200">ARCH</span>
+											<span class="px-2 py-1 rounded bg-violet-50 border border-violet-200">AI (temporary handover)</span>
+										</div>
+										<p class="mt-1 text-xs text-zinc-500">One owner at a time. Parallel work = separate tasks.</p>
+									</div>
+									<div>
+										<div class="text-xs font-semibold text-zinc-500 tracking-widest">WHICH HELPER</div>
+										<div class="mt-1 text-xs text-zinc-700"><span class="px-2 py-1 rounded bg-white border border-zinc-200">none</span> <span class="text-zinc-400">+ 18 specialists</span> <span class="ml-1 px-1.5 py-0.5 rounded bg-zinc-100 text-xs">aialm-oss-*</span></div>
+										<p class="mt-1 text-xs text-zinc-500">Only the assigned helper may change the ticket at that step.</p>
+									</div>
+								</div>
+							</div>
+							<div class="space-y-4">
+								<div class="rounded-xl border border-zinc-200 bg-amber-50 p-4">
+									<h4 class="text-sm font-semibold text-amber-900">Simple rules, no grey areas</h4>
+									<ul class="mt-2 space-y-1.5 text-xs leading-5 text-amber-900/80">
+										<li>• Only one helper works on a ticket at a time.</li>
+										<li>• “Done” always means no active owner.</li>
+										<li>• “Hand over to AI” is a temporary flag — it disappears after pickup.</li>
+										<li>• No vague “blocked” — if something’s missing, the ticket stays put and gets a comment explaining what’s needed.</li>
+									</ul>
+								</div>
+								<div class="rounded-xl border border-zinc-200 p-4 bg-white">
+									<h4 class="text-sm font-semibold">Allowed moves only</h4>
+									<div class="mt-2 grid grid-cols-1 gap-1.5 text-xs text-zinc-600">
+										<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-zinc-100">Backlog</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">Waiting for helper</span> <span class="text-zinc-400 ml-auto">helper starts</span></div>
+										<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">Waiting</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">Working</span> <span class="text-zinc-400 ml-auto">same helper</span></div>
+										<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-indigo-50 border border-indigo-200">Working</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">Needs OK</span> <span class="text-zinc-400 ml-auto">helper done</span></div>
+										<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-amber-50 border border-amber-200">Needs OK</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">Waiting</span> <span class="text-zinc-400 ml-auto">human approves</span></div>
+										<div class="flex items-center gap-2"><span class="px-2 py-1 rounded bg-emerald-50 border border-emerald-200">Ready</span> <span class="text-zinc-400">→</span> <span class="px-2 py-1 rounded bg-sky-50 border border-sky-200">Waiting</span> <span class="text-zinc-400 ml-auto">next helper</span></div>
+									</div>
+									<p class="mt-3 text-xs text-zinc-500">Anything else is rejected with a comment — helpers can’t invent new states.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Stack -->
+						<div class="mt-8">
+							<h3 class="text-sm font-semibold">Stack — boring, auditable</h3>
+							<div class="mt-3 flex flex-wrap gap-2 text-xs">
+								<span class="px-3 py-1.5 rounded-full bg-zinc-900 text-white">TypeScript</span>
+								<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Node 22</span>
+								<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Jira Cloud REST</span>
+								<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Docker</span>
+								<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Vitest + Playwright</span>
+								<span class="px-3 py-1.5 rounded-full bg-white border border-zinc-200">Astro + Tailwind</span>
+							</div>
+							<div class="mt-4 grid md:grid-cols-2 gap-4 text-sm">
+								<div class="rounded-xl border border-zinc-200 p-4 bg-zinc-50">
+									<h4 class="font-medium text-sm">What’s built</h4>
+									<ul class="mt-2 space-y-1 text-sm text-zinc-600 list-disc list-inside">
+										<li>Onboarding: new Jira project per repo</li>
+										<li>Discovery: GitHub issues → candidates</li>
+										<li>Orchestrator: one safe column move at a time</li>
+										<li>Dispatcher: finds waiting tickets, runs helpers in Docker</li>
+									</ul>
+								</div>
+								<div class="rounded-xl border border-zinc-200 p-4 bg-zinc-50">
+									<h4 class="font-medium text-sm">Next</h4>
+									<ul class="mt-2 space-y-1 text-sm text-zinc-600 list-disc list-inside">
+										<li>Full PO → QA → Arch → Sec → Dev loop</li>
+										<li>Verify → traceable pull request</li>
+										<li>Feedback: maintainer review → governed fix</li>
+									</ul>
+									<p class="mt-3 text-xs text-zinc-500">Private prototype — details in demo.</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="rounded-2xl border border-zinc-200 p-5">
-						<h3 class="font-semibold">Roadmap (next)</h3>
-						<ul class="mt-2 space-y-1.5 text-sm text-zinc-600 list-disc list-inside">
-							<li>Full PO→QA→ARCH→SEC→DEV loop + e2e consistency suite</li>
-							<li>Verify (repo validation) → PR with traceable, honestly disclosed body</li>
-							<li>Feedback: maintainer review → ALM records → governed correction cycle</li>
-						</ul>
-						<p class="mt-3 text-xs text-zinc-500">Private prototype — roadmap shared in demo. No public commitments.</p>
-					</div>
-				</div>
-				<p class="mt-6 text-xs text-zinc-500">Inspired by the need for auditability in regulated B2B domains (e.g., Transportation Management) — where every automated change must be traceable and reversible.</p>
+				</details>
 			</div>
 		</section>
 
@@ -393,7 +309,7 @@ return { result: 'APPLIED' };`}</code></pre>
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
 								LinkedIn — Christopher Paliga
 							</a>
-							<a href={`mailto:${email}?subject=ai-alm-oss%20—%20private%20demo%20request&body=Hi%20Krzysztof%2C%0A%0AI%27d%20like%20a%2030-min%20walkthrough%20of%20ai-alm-oss%20(governed%20ALM%20pipeline).%0A%0ABest%2C%0A`} class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-800 border border-white/10 text-white text-sm font-medium hover:bg-zinc-700 transition">
+							<a href={`mailto:${email}?subject=Contact%20—%20ai-alm-oss&body=Hi%20Krzysztof%2C%0A%0AI%27d%20like%20to%20learn%20more%20about%20ai-alm-oss.%0A%0ABest%2C%0A`} class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-800 border border-white/10 text-white text-sm font-medium hover:bg-zinc-700 transition">
 								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg>
 								{email}
 							</a>
@@ -401,11 +317,11 @@ return { result: 'APPLIED' };`}</code></pre>
 						<p class="mt-4 text-xs text-zinc-500">Response time &lt;24h • Demo: 30 min, screen share, anonymized board • NDA-friendly</p>
 					</div>
 					<div class="md:col-span-2 bg-white text-zinc-900 p-8 md:p-10 flex flex-col justify-center border-t md:border-t-0 md:border-l border-white/10">
-						<h3 class="font-semibold">Request private access</h3>
+						<h3 class="font-semibold">Get in touch</h3>
 						<p class="mt-2 text-sm text-zinc-600 leading-6">The repository is private. I share code, board access, and a live walkthrough on request for hiring managers and technical interviewers.</p>
 						<div class="mt-5 space-y-2.5 text-sm">
-							<a href={`mailto:${email}?subject=ai-alm-oss%20—%20private%20demo%20request`} class="flex items-center justify-between px-4 py-3 rounded-xl border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition">
-								<span class="font-medium">Email for demo</span>
+							<a href={`mailto:${email}?subject=Contact%20—%20ai-alm-oss`} class="flex items-center justify-between px-4 py-3 rounded-xl border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition">
+								<span class="font-medium">Contact me</span>
 								<span class="text-zinc-400">→</span>
 							</a>
 							<a href={linkedIn} target="_blank" rel="noopener" class="flex items-center justify-between px-4 py-3 rounded-xl border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition">
@@ -418,7 +334,6 @@ return { result: 'APPLIED' };`}</code></pre>
 				</div>
 			</div>
 
-			<!-- Footer -->
 			<footer class="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500 border-t border-zinc-200 pt-6">
 				<div>© 2026 Krzysztof Paliga • ai-alm-oss — research prototype • Built with Astro + Tailwind • <a href={linkedIn} target="_blank" rel="noopener" class="underline hover:text-zinc-700">LinkedIn</a> • <a href={`mailto:${email}`} class="underline hover:text-zinc-700">{email}</a></div>
 				<div class="flex items-center gap-3">
